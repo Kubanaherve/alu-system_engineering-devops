@@ -21,7 +21,7 @@ backend web_servers
 	mode http
 	balance roundrobin
 	server 7329-web-01 13.40.95.123:80 check
-	server 7329-web-02 WEB02_IP:80 check
+	server 7329-web-02 13.40.151.56:80 check
 EOF
 fi
 service haproxy restart
