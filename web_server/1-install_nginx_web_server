@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Installs Nginx and serves a page containing Holberton School
+apt-get update -y
+apt-get install -y nginx
+echo "Holberton School" > /var/www/html/index.html
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
+service nginx restart

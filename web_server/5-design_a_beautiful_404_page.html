@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>404 — Ceci n'est pas une page</title>
+	<style>
+		body {
+			margin: 0;
+			min-height: 100vh;
+			display: grid;
+			place-items: center;
+			background: #1b1a17;
+			color: #f4efe6;
+			font-family: Georgia, serif;
+		}
+		main {
+			width: min(640px, 92vw);
+			text-align: center;
+		}
+		.sign {
+			display: inline-block;
+			padding: 28px 36px 22px;
+			background: #f4efe6;
+			color: #1b1a17;
+			border: 8px solid #e85d04;
+			box-shadow: 12px 12px 0 #9a031e;
+			transform: rotate(-2deg);
+		}
+		h1 {
+			margin: 0;
+			font-size: 64px;
+			letter-spacing: 2px;
+		}
+		p {
+			font-size: 22px;
+		}
+		.road {
+			height: 14px;
+			margin-top: 28px;
+			background: repeating-linear-gradient(90deg, #f4efe6 0 28px, transparent 28px 48px);
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<div class="sign">
+			<h1>404</h1>
+			<p>Ceci n'est pas une page</p>
+		</div>
+		<div class="road"></div>
+		<p>This address wandered off. The server is still here.</p>
+	</main>
+</body>
+</html>
