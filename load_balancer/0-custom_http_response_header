@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Configures Nginx so the response includes X-Served-By with the server hostname
+apt-get update -y
+apt-get install -y nginx
+echo "Holberton School" > /var/www/html/index.html
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
+if ! grep -q "X-Served-By" /etc/nginx/sites-available/default
+then
+	sed -i 's/server_name _;/server_name _;\n\tadd_header X-Served-By $hostname;/' /etc/nginx/sites-available/default
+fi
+service nginx restart
