@@ -10,4 +10,4 @@ Bash scripts that configure an Ubuntu machine for the web server project. The ch
 | `4-not_found_page_404` | Adds a custom 404 page containing Ceci n'est pas une page |
 | `5-design_a_beautiful_404_page.html` | The designed 404 page |
 
-`2-setup_a_domain_name` is the root domain only, for example `myschool.tech`, after the A record points at web-01.
+`2-setup_a_domain_name` holds the root domain only, `friendherve.tech`. Its A record points at web-01.
